@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+* {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "team team" "photo photo" "contact contact" "bot-nat bot-nav" "footer footer";
+}
+
+/* header content*/
+
+/* Background */
+
+header {
+    grid-area: header;
+    background-image: url(img/headerimg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 380px;
+    color: #fff;
+}
+
+.head-wrap {
+    background-color: #440064e1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 380px;
+}
+
+/* Menu */
+
+.main-nav {
+    color: #fff;
+    overflow: hidden;
+}
+
+.main-nav a {
+    float: right;
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 16px;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.main-nav .active {
+    text-decoration: underline;
+}
+
+.main-nav .icon {
+    display: none;
+}
+
+/* Title */
+
+.header-title {
+    padding-top: 90px;
+    margin: auto;
+    font-size: 1.6em;
+}
+
+/* team content*/
+
+.team {
+    grid-area: team;
+    padding: 40px;
+}
+
+.team h2 {
+    margin-bottom: 50px;
+}
+
+.profile-row {
+    margin: 0 auto;
+}
+
+.col-4 {
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.col-4 img {
+    width: 290px;
+    border-radius: 100%;
+    padding: 5px;
+    margin: auto;
+}
+
+/* Instagram content  */
+
+.photo {
+    grid-area: photo;
+    background-color: #f2d7ff;
+}
+
+.instagram img {
+    width: 150px;
+    margin: 20px;
+}
+
+/* Contact us content */
+
+.contact {
+    grid-area: contact;
+    background-color: #440064;
+}
+
+/* bottom navigation menu + social media */
+
+.bot-nav {
+    grid-area: bot-nav;
+    background-color: #2e2e2e;
+}
+
+/* bottom footer */
+
+footer {
+    grid-area: footer;
+    background-color: #272727;
+}
+
+/********* Widescreen ***********/
+
+@media screen and (max-width: 600px) {
+    .main-nav a:not(:first-child) {
+        display: none;
+    }
+    .main-nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-nav.responsive {
+        position: relative;
+    }
+    .main-nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .main-nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+
+}

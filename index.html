@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>One Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Slide 1 - Header and Menu -->
+        <header>
+            <div class="head-wrap">
+                <nav class="main-nav" id="myTopnav">
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                    <a href="#contact">CONTACT</a>
+                    <a href="#social">SOCIAL</a>
+                    <a href="#about" class="active">ABOUT US</a>
+                    <a href="#home">HOME</a>
+                </nav>
+                <div class="header-title">
+                    <h2>Premium Quality &amp; Tradition</h2>
+                </div>
+            </div>
+        </header>
+
+        <!-- Slide 2 - Team row -->
+        <div class="team">
+            <div class="title">
+                <h2>Meet Our Team</h2>
+            </div>
+            <div class="profile-row">
+                <div class="col-4">
+                    <img src="img/profile1.jpg" alt="">
+                    <h3>Joakim Hall</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/profile2.jpg" alt="">
+                    <h3>Ingen Aning</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/profile3.jpg" alt="">
+                    <h3>Joakim Hall</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 - Instagram photos -->
+        <div class="photo">
+            <div class="instagram">
+                <img src="img/profile1.jpg" alt="">
+                <img src="img/profile2.jpg" alt="">
+                <img src="img/profile3.jpg" alt="">
+            </div>
+            <div class="btn-light">
+                <a href="#">Follow us on instagram</a>
+            </div>
+        </div>
+
+        <!-- Slide 4 - Contact row -->
+        <div class="contact">
+            <div class="title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="input">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="contact@email.com">
+                    <textarea cols="30" rows="10"></textarea>
+                </div>
+                <div class="btn-dark">
+                    <a href="#">SEND</a>
+                </div>
+                <div class="map"></div>
+                <div class="adress">
+                    <p>811 7th Avenue 53rd Street</p>
+                    <p>New Yourk, 10019, United States</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5 - Bottom Navigation row -->
+        <div class="bot-nav"></div>
+
+        <!-- Bottom Footer -->
+        <footer>
+            <p>&COPY; Copyright 2018, All Rights Reserved.</p>
+        </footer>
+    </div>
+    <!-- Script for dropdownmenu -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "main-nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "main-nav";
+            }
+        }
+    </script>
+</body>
+
+</html>
